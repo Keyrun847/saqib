@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body style="background-color: #F5F5F5; color: #1A1A1A;">
     <header>
         <nav class="container">
             <div class="logo">Atomic Habits</div>
@@ -17,17 +17,25 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#laws">4 Laws</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="hero">
+    <section id="home" class="hero"
+        style="background-color: #F5F5F5; color: #1A1A1A; margin-bottom: 0; padding-bottom: 0;">
+        <div class="container">
+            <img src="./book.jpg" style="border-radius: 5%;" alt="Book">
+        </div>
         <div class="hero-content">
-            <h1>Little Changes.<br>Remarkable Results.</h1>
-            <h2>Discover how small daily habits can have massive long-term impact.</h2>
-            <p>Based on the best-selling book Atomic Habits by James Clear, this website is your gateway to mastering
+            <h1 style="color: #1A1A1A;">Little Changes.<br>Remarkable Results.</h1>
+            <h2 style="color: #1A1A1A;">Discover how small daily habits can have massive long-term impact.</h2>
+            <p style="color: #555555;">Based on the best-selling book Atomic Habits by James Clear, this website is your
+                gateway to mastering
                 habits that stick — one small change at a time.</p>
-            <a href="#about" class="cta-button">Start Your Journey</a>
+            <a href="#about" class="cta-button"
+                style="background-color: #4A90E2; color: #FFFFFF; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block;">Start
+                Your Journey</a>
         </div>
     </section>
 
@@ -49,7 +57,8 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-image">
-                    James Clear
+                    <img src="./JcHd.jpg" alt="James Clear"
+                        style="width: 100%; height: auto; max-width: 400px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
                 </div>
                 <div class="about-text">
                     <h2>Meet James Clear</h2>
@@ -82,8 +91,7 @@
             </div>
         </div>
     </section>
-
-    <section id="laws" class="laws fade-in">
+    <section id="laws" class="laws fade-in" style="background-color: #F5F5F5;">
         <div class="container">
             <h2>The 4 Laws of Behaviour Change</h2>
             <div class="laws-grid">
@@ -109,38 +117,60 @@
                     <div class="law-number">4</div>
                     <div class="law-title">Make it Satisfying</div>
                     <div class="law-description">Make the outcome feel rewarding.</div>
-                    <div class="law-example">Mark on your calendar after completing.</div>
+                    <div class="law-example">Mark it on your calendar after completing.</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="habit-loop fade-in">
+    <!-- Habit Loop Section -->
+    <section class="habit-loop fade-in"
+        style="background: linear-gradient(to bottom right, #f5f7fa, #e4ecf7); color: #1A1A1A; padding: 80px 20px;">
         <div class="container">
-            <h2>The Habit Loop</h2>
-            <p>Every habit is formed through a loop:</p>
-            <div class="loop-diagram">
-                <div class="loop-step">
-                    <h3>Cue</h3>
-                    <p>Trigger</p>
+            <h2 style="text-align: center;">The Habit Loop</h2>
+            <p style="text-align: center; color: #555555;">Every habit is formed through a loop:</p>
+            <div class="loop-diagram"
+                style="display: grid; grid-template-columns: 200px 40px 200px; grid-template-rows: auto 40px auto 40px auto; justify-content: center; align-items: center; margin-top: 40px; gap: 20px;">
+                <!-- Top Row -->
+                <div class="loop-step"
+                    style="grid-column: 1; grid-row: 1; background-color: #FFFFFF; border: 1px solid #DDDDDD; border-radius: 12px; padding: 20px; text-align: center;">
+                    <h3 style="margin-bottom: 10px;">Cue</h3>
+                    <p style="color: #555555;">Trigger</p>
                 </div>
-                <div class="loop-step">
-                    <h3>Craving</h3>
-                    <p>Desire</p>
+                <div style="grid-column: 2; grid-row: 1; font-size: 2rem; color: #4A90E2; text-align: center;">→</div>
+                <div class="loop-step"
+                    style="grid-column: 3; grid-row: 1; background-color: #FFFFFF; border: 1px solid #DDDDDD; border-radius: 12px; padding: 20px; text-align: center;">
+                    <h3 style="margin-bottom: 10px;">Craving</h3>
+                    <p style="color: #555555;">Desire</p>
                 </div>
-                <div class="loop-step">
-                    <h3>Response</h3>
-                    <p>Action</p>
+                <!-- Down Arrow -->
+                <div style="grid-column: 3; grid-row: 2; font-size: 2rem; color: #4A90E2; text-align: center;">↓</div>
+                <!-- Reward -->
+                <div class="loop-step"
+                    style="grid-column: 3; grid-row: 3; background-color: #FFFFFF; border: 1px solid #DDDDDD; border-radius: 12px; padding: 20px; text-align: center;">
+                    <h3 style="margin-bottom: 10px;">Reward</h3>
+                    <p style="color: #555555;">Benefit</p>
                 </div>
-                <div class="loop-step">
-                    <h3>Reward</h3>
-                    <p>Benefit</p>
+                <!-- Left Arrow -->
+                <div style="grid-column: 2; grid-row: 3; font-size: 2rem; color: #4A90E2; text-align: center;">←</div>
+                <!-- Response -->
+                <div class="loop-step"
+                    style="grid-column: 1; grid-row: 3; background-color: #FFFFFF; border: 1px solid #DDDDDD; border-radius: 12px; padding: 20px; text-align: center;">
+                    <h3 style="margin-bottom: 10px;">Response</h3>
+                    <p style="color: #555555;">Action</p>
                 </div>
+                <!-- Up Arrow -->
+                <div style="grid-column: 1; grid-row: 2; font-size: 2rem; color: #4A90E2; text-align: center;">↑</div>
             </div>
+            <p
+                style="margin-top: 30px; font-size: 1.1rem; color: #1A1A1A; max-width: 700px; margin-left: auto; margin-right: auto; text-align: center;">
+                Understanding this loop allows you to reprogram your habits by changing the cues and rewards. By
+                intentionally modifying one part of the loop, you can build better habits that align with your goals.
+            </p>
         </div>
     </section>
-
-    <section id="testimonials" class="testimonials fade-in">
+    <section id="testimonials" class="testimonials fade-in"
+        style="background-color: #F5F5F5;">
         <div class="container">
             <h2>What Others Are Saying</h2>
             <div class="testimonials-grid">
@@ -184,28 +214,33 @@
             </div>
         </div>
     </section>
-
-    <section id="reviews" class="contact-form fade-in">
- <div class="container">
-            <h2>Get In Touch</h2>
+    <section id="contact" class="contact-form fade-in">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feedback, or collaboration ideas, feel free to reach out using the form
+                below. We value every message!</p>
             <form action="#" method="post" class="custom-form">
                 <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Your Full Name" required
+                        style="background-color: #FAFAFA; color: #1A1A1A; border: 1px solid #DDDDDD;">
                 </div>
                 <div class="form-group">
-                    <label for="number">Phone Number:</label>
-                    <input type="tel" id="number" name="number" placeholder="Your Phone Number">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required
+                        style="background-color: #FAFAFA; color: #1A1A1A; border: 1px solid #DDDDDD;">
                 </div>
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject of your message">
                 </div>
                 <div class="form-group">
-                    <label for="description">Description:</label>
-                    <textarea id="description" name="description" rows="6" placeholder="Tell us more..."></textarea>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required
+                        style="background-color: #FAFAFA; color: #1A1A1A; border: 1px solid #DDDDDD;"></textarea>
                 </div>
-                <button type="submit" class="submit-button">Send Message</button>
+                <button type="submit" class="submit-button"
+                    style="background-color: #4A90E2; color: #FFFFFF;">Submit</button>
             </form>
         </div>
     </section>
@@ -223,7 +258,7 @@
 
         function rotateQuotes() {
             quotes[currentQuote].classList.remove('active');
-            currentQuote = (currentQuote + 1) % (quotes.length - 1); // -1 because author is not a quote
+            currentQuote = (currentQuote + 1) % (quotes.length - 1);
             quotes[currentQuote].classList.add('active');
         }
 
@@ -271,14 +306,14 @@
                 header.style.boxShadow = 'none';
             }
         });
-    </script>
- <script>
- // Prevent form submission
- const contactForm = document.querySelector('.custom-form');
-    contactForm.addEventListener('submit', function(event) {
- event.preventDefault();
- });
- </script>
-</body>
 
-</html>
+        // Prevent default form submission
+        const contactForm = document.querySelector('.custom-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+                alert("Thank you for reaching out! We'll get back to you soon.");
+                contactForm.reset();
+            });
+        }
+    </script>
